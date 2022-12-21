@@ -1,0 +1,48 @@
+body {
+    padding: 2rem;
+    background-image: linear-gradient( to right,rgb(92, 133, 180), rgb(20, 22, 22)  );
+  }
+  
+  .accordion {
+    --bs-accordion-active-bg: rgb(201, 220, 224);
+    --bs-accordion-bg: transparent;
+    --bs-accordion-btn-icon-width: 10px;
+    --bs-accordion-btn-focus-border-color:rgb(201, 220, 224);
+    
+    
+  }
+
+  .accordion-item,.accordion-header
+{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+ 
+}
+  
+  .nav
+  {
+      --bs-nav-link-color: rgb(9, 3, 44);
+      --bs-nav-link-hover-color: rgb(201, 220, 224);
+      --bs-nav-link-font-size:10px;   
+      
+  }
+  h1
+{
+    
+    font-size: 35px;
+   
+   color : rgb(14, 7, 78);
+   text-align: center;
+   letter-spacing: 5px;
+   text-shadow: 2px 2px rgba(91, 83, 119, 0.5);
+   
+   
+}
+
+  h4{
+    font-size: 20px;
+  }
+
+

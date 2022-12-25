@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="other.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <div class="container">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start" style="background-color: rgb(174, 200, 214)">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold"><h5> Stack</h5></div>
+                <p> A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. It contains only one pointer, top pointer pointing to the topmost element of the stack where insertion and deletion will be done from this one end.</p>
+              </div>
+              
+            </li>        
+                            
+            <li class="list-group-item d-flex justify-content-between align-items-start" style="background-color: rgb(174, 200, 214)">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Applications of Stack</div>
+                <div class="accordion" id="accordionExample" style="--bs-accordion-bg: transparent;">
+                    <div class="accordion-item" >
+                      <h2 class="accordion-header" id="headingOne" style="background-color: transparent;">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Balancing of symbols. 
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>As we know, each program has an opening and closing braces; when the opening braces come, we push the braces in a stack, and when the closing braces appear, we pop the opening braces from the stack. Therefore, the net value comes out to be zero. If any symbol is left in the stack, it means that some syntax occurs in a program.
+
+                          </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          String reversal
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          
+                            Stack is also used for reversing a string. For example, we want to reverse a "Indiaisgreat" string, so we can achieve this with the help of a stack.
+First, we push all the characters of the string in a stack until we reach the null character.
+After pushing all the characters, we start taking out the character one by one until we reach the bottom of the stack.
+                          </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Undo/Redo
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            It can also be used for performing UNDO/REDO operations. For example, we have an editor in which we write 'a', then 'b', and then 'c'; therefore, the text written in an editor is abc. So, there are three states, a, ab, and abc, which are stored in a stack. There would be two stacks in which one stack shows UNDO state, and the other shows REDO state.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Recursion
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            The recursion means that the function is calling itself again. To maintain the previous states, the compiler creates a system stack in which all the previous records of the function are maintained.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Backtracking
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Suppose we have to create a path to solve a maze problem. If we are moving in a particular path, and we realize that we come on the wrong way. In order to come at the beginning of the path to create a new path, we have to use the stack data structure.     
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Expression conversion
+                          </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Stack can also be used for expression conversion. This is one of the most important applications of stack. The list of the expression conversion is given below
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </li>
+        </ol>
+
+        <div class="accordion" id="accordionExample" style="background-color: rgb(174, 200, 214)">
+            <div class="accordion-item, " style="background-color: transparent; ">
+              <h2 class="accordion-header" id="headingOne1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                  <h5 style="font-size:18px ; color:black"> 3) Stack Opperations </h5>
+                </button>
+              </h2>
+              <div id="collapseOne1" class="accordion-collapse collapse " aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">push()</li>
+                        <li class="list-group-item">pop()</li>
+                        <li class="list-group-item">display()</li>
+                        <li class="list-group-item">peek()</li>
+                        <li class="list-group-item">isEmpty()</li>
+                        <li class="list-group-item">isFull()</li>
+                        <li class="list-group-item">count()</li>
+                        <li class="list-group-item">display()</li>
+                      </ol>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
